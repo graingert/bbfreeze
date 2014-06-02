@@ -16,13 +16,13 @@ version = get_version()
 
 
 def main():
-    install_requires = ["altgraph==0.11", "bbfreeze-loader>=1.1.0,<1.2.0"]
+    install_requires = ["altgraph==0.9", "bbfreeze-loader>=1.1.0,<1.2.0"]
 
     if sys.platform == 'win32':
         install_requires.append("pefile>=1.2.4")
 
     if sys.platform == 'darwin':
-        install_requires.append("macholib==1.6")
+        install_requires.append("macholib==1.4.3")
 
     setup(name="bbfreeze",
           version=version,
